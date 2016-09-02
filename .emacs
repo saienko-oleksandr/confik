@@ -22,3 +22,26 @@
 (setq tab-width 4)
 ;; (display-time)
 (setq column-number-mode t)
+
+;; install packages
+(require 'package)
+
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
+
+(package-initialize)
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
+(defvar myPackages
+  '(better-defaults
+    material-theme
+    elpy))
+
+(mapc #'(lambda (package)
+          (unless (package-installed-p package)
+            (package-install package)))
+      myPackages)
+
+;; customize
+(load-theme 'material t)
