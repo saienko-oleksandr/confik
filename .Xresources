@@ -2,7 +2,7 @@ XTerm*metaSendsEscape: true
 XTerm*visualBell: true
 XTerm*faceName: Bitstream Vera Serif Mono
 XTerm*faceSize: 11
-XTerm*vt100*geometry: 80x60
+XTerm*vt100*geometry: 80x43
 XTerm*utf8: 1
 XTerm*locale: true
 XTerm*loginShell: true
