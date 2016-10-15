@@ -7,14 +7,18 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(custom-enabled-themes (quote (wheatgrass)))
- '(tool-bar-mode nil))
+ '(column-number-mode t)
+ '(custom-enabled-themes (quote (deeper-blue)))
+ '(menu-bar-mode nil)
+ '(show-paren-mode t)
+ '(tool-bar-mode nil)
+ '(transient-mark-mode (quote (only . t))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
 (setq calendar-week-start-day 1)
 (setq european-calendar-style 't)
 (setq-default indent-tabs-mode nil)
@@ -44,4 +48,4 @@
       myPackages)
 
 ;; customize
-(load-theme 'material t)
+(load-theme 'deeper-blue t)
