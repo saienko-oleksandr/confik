@@ -27,6 +27,9 @@
 ;; (display-time)
 (setq column-number-mode t)
 
+;; key rebounds
+;(global-set-key (kbd "C-h") 'delete-backward-char)
+
 ;; install packages
 (require 'package)
 
@@ -40,7 +43,9 @@
 (defvar myPackages
   '(better-defaults
     material-theme
-    elpy))
+    elpy
+    flycheck
+    py-autopep8))
 
 (mapc #'(lambda (package)
           (unless (package-installed-p package)
@@ -48,4 +53,16 @@
       myPackages)
 
 ;; customize
+(setq inhibit-startup-message t)
 (load-theme 'deeper-blue t)
+
+;; Python customizations
+
+(elpy-enable)
+
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
+
+(when (require 'py-autopep8 nil t)
+  (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save))
