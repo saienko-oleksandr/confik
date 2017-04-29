@@ -1,12 +1,14 @@
 XTerm*metaSendsEscape: true
 XTerm*visualBell: true
-XTerm*faceName: Bitstream Vera Serif Mono
+XTerm*faceName: DejaVu Sans Mono Book
 XTerm*faceSize: 11
 XTerm*vt100*geometry: 80x43
-XTerm*VT100.utf8Fonts.font: terminus-14
+XTerm*font: -*-terminus-*-r-*-*-12-*-*-*-*-*-iso10646-*
+emacs*font: terminus
 XTerm*utf8: 1
 XTerm*locale: true
 XTerm*loginShell: true
 XTerm*background: black
 XTerm*foreground: gray
 XTerm*selectToClipboard: true
+XTerm*scrollTtyOutput: false
