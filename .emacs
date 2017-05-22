@@ -8,7 +8,7 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (deeper-blue)))
+ '(custom-enabled-themes (quote (material-theme)))
  '(menu-bar-mode nil)
  '(show-paren-mode t)
  '(tool-bar-mode nil)
@@ -49,11 +49,8 @@
     go-mode
     go-eldoc
     go-autocomplete
-
     markdown-mode
-
     json-mode
-    
     window-number))
 
 (mapc #'(lambda (package)
