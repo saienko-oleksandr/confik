@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-# This selects your default screen font from among the ones in
-# /usr/share/kbd/consolefonts.
-#
-#setfont -v UniCyr_8x16.psf.gz
-setfont -v Cyr_a8x16.psfu.gz
